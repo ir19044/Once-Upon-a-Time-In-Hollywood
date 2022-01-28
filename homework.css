@@ -1,0 +1,437 @@
+/*Ilja Repko ir19044*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  font-size:14px;
+  width:auto;
+  min-width:1500px;
+  font-family: 'Roboto','Calibri',sans-serif;
+}
+
+header {     
+  background:url(images/topimage.jpeg);
+  background-repeat:no-repeat; 
+  background-size:cover;
+  width:100%;
+  height:90%;
+  background-clip:border-box;
+  
+}
+
+header div.bg-overlay{
+  background-color:rgba(124, 122, 122, 0.9);
+}
+
+nav#top-menu {  
+  position:fixed;
+  background-color:rgba(14,2,35,0.8);
+  width:100%;
+  z-index:1;
+}
+
+.parent-menu{     
+  padding-top:10px;
+  padding-bottom:5px;
+}
+
+.parent-menu li.active:hover ul.sub-menu {
+  display: block;
+}
+
+ li.sub-menu-caption, div.expand {
+  position: relative;
+  display: inline-block;
+  color: rgb(242,177,26);
+}
+
+.sub-menu li {
+  display:block;
+  padding: 15px;
+  
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(14,2,35,0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-transform:capitalize;
+  z-index: 1;
+  left:0;
+}
+
+.upper-menu a:hover{  
+  color:rgb(242,177,26);
+} 
+
+.upper-menu.right:hover{
+color:rgb(255,255,255);
+background-color:rgb(242,213,26);
+}
+
+.upper-menu.right a:hover{
+color:rgb(255,255,255);
+}
+
+li.upper-menu {
+  float:left;
+  padding:0px 10px 0px 10px;
+  cursor: pointer;
+  margin:10px;
+  font-size:1.2em;
+}
+
+li.upper-menu a {
+  text-decoration:none;
+  color:rgb(255,255,255);
+}
+
+li.upper-menu.right {
+background-color:rgba(242,213,26,0.8);
+border:2px solid rgb(255,255,255);
+margin-top:0.1%;
+padding:0.3% 0.6%;
+border-radius:32px;
+float:right;
+padding:0.3% 0.6%;
+text-transform:capitalize;
+}
+
+div.title h1 {
+    color:rgb(255,255,255);
+    font-size: 72px;
+}
+
+div.title {   
+    position:relative;
+    display:inline-block;
+    margin-bottom: 3%;
+    margin-top: 30%;
+    margin-right:0.1%;
+    margin-left:32%; 
+}
+
+.title h3{   
+    color:rgb(255,255,255);
+    font-size:28px;
+    padding-top:4%;
+    margin-left:61%;
+}
+
+.info{
+    font-size:70%;
+}
+
+div.social {   
+    color:rgba(255,255,255,0.8);
+    font-size:18px;
+    width:300px;
+    height:20px;
+    display:inline-block;
+}
+
+div.social h5{    
+    right:4%;
+    color:rgb(255,255,255);
+    font-size:18px;
+    bottom:85.5%;
+    position:absolute;
+    top:8.5%;
+}
+  
+.social-btns img{
+    height:90px;
+    max-height:20px;
+    max-width:20px;
+    opacity:0.6;
+    padding:2px;
+}
+
+div.social-btns {
+    right:0.5%;
+    position:absolute;
+    bottom:85%;
+    top:8%;
+}
+
+div.social-btns a img:hover{
+    opacity:1.0;
+}
+
+div.social-btns img{
+    height:90px;
+}
+
+span.info {
+    padding:1%;
+}
+
+/*Text*/
+section#summary h2{
+    color:rgb(0,0,0);
+    font-size:42px;
+    font-weight:bold;
+    font-stretch:ultra-condensed;
+    display:block;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+
+section#summary h2.upper{
+  text-transform:uppercase;
+}
+
+section#summary h2.text-center{
+  text-align:center;
+}
+
+section#summary{
+  color:rgb(132,132,132);
+  font-size:18px;
+  line-height:40px;
+}
+
+section#summary p.add span{
+  font-size:1.5em;
+}
+
+section#summary p{
+  letter-spacing: 0.9pt;
+  display:block;
+  word-wrap:normal;
+}
+
+/*Casting*/
+section#cast{
+    width:100%;
+    background-image:url(images/car.jpg);
+    min-width: 500px;
+    display:block;
+}
+
+section#cast div.bg-overlay{  
+   background:rgba(14,2,35,0.9);
+}
+
+div.bg-overlay h4 {
+  color: rgb(255,255,255);
+  font-size: 24px;
+  padding:50px;
+}
+
+div.bg-overlay h4.text-center{
+  text-align:center;
+}
+
+div.bg-overlay h4.upper{
+  text-transform:uppercase;
+}
+
+div.cast-text p{
+  position:relative;
+  display:block;
+  padding-top:15px;
+  color:rgb(132,132,132);
+  font-size:14px;
+}
+
+div.cast-text{
+  position:relative;
+  display:block;
+  bottom:119px;
+  background:rgba(255,255,255,0.8);
+  font-size:18px;
+  color:rgb(132,132,132);
+  text-transform:uppercase;
+  width:280px;
+  height:60px;
+  text-align:center;
+  padding:20px 10px 5px;
+}
+
+div.cast-text a{
+  text-decoration:none;
+  color:rgb(42,42,42);
+  font-weight:bold;
+}
+
+div.cast-info-container {
+  display:inline-block;  
+  width: 100%;
+  text-align:center;
+}
+  
+div.cast-info-cell {  
+  display:inline-flex; 
+  width:19%;
+  text-align:center;
+  flex-grow:0;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+div.cast-head{
+  position:relative;
+  font-size:18px;
+  background-color:rgb(242,213,26);
+  color:rgb(255,255,255);
+  opacity:0.8;
+  padding:5px;
+  width:52px;
+  height:22px;
+  bottom:522px;
+  left:13px;
+}
+
+.cast-info-container .cast-info-cell:last-child .cast-head:nth-child(2){
+    width:75px;  
+}
+
+.cast-info img{
+  position: relative; 
+}
+
+div.cast-info img:hover~.cast-head{
+  opacity:1;
+}
+
+div.cast-info img:hover~.cast-text{
+  background-color:rgb(242,213,26); 
+}
+
+div.cast-info img:hover~.cast-text a{
+  color:rgb(255,255,255);
+}
+
+span.line{
+  display:block;
+  position:relative;  
+  border-top: 2px solid white;
+  width:30px;
+  margin:auto;
+  transform:translateY(60px);
+  top:-20px;
+}
+
+/*Trailer*/
+section#trailer h2{
+  display:block;
+  position:relative;
+  padding-top:50px;
+  padding-bottom:50px;
+  width:100%;
+  text-transform:uppercase;
+  font-size:42px;
+  color:rgb(0,0,0);
+  font-weight:bold;
+}
+
+section#trailer{
+  display:block;
+  position:relative;
+  height:600px;
+  max-height:800px;
+  padding-bottom:250px;
+}
+
+section#trailer.text-center h2{
+  text-align:center;
+  position: relative;
+}
+
+section#trailer.text-center{
+  text-align: center;
+  position: relative;
+}
+
+section#trailer iframe{
+  width:50%;
+  height:100%;
+  min-height:100%;
+  min-width:50%;
+  position:relative;
+  text-align:center;
+}
+
+#trailer.text-center p a{
+  display:inline-block;
+  position: relative;
+  color:rgb(132,132,132);
+  font-size:18px;
+  text-decoration:none;
+  padding-top:20px;
+}
+  /*Tickets*/ 
+section#tickets{
+  width:100%;
+  height:270px;
+  background-image:url(images/cinema.jpg);
+  background-repeat:no-repeat;
+  background-clip:border-box;
+  background-size:cover;
+  display:block;
+}
+
+section#tickets div.bg-overlay{
+  background:rgba(255,255,255,0.2);
+  height:270px;
+}
+
+#tickets a{
+  font-size:24px;
+  color:rgb(255,255,255);
+  text-decoration:none;
+  text-transform:uppercase;
+  background-color:rgba(242,213,26,0.8);
+  border:2px solid white;
+  margin-top:0.1%;
+  padding:15px 25px;
+  border-radius:32px;  
+}
+
+#tickets.text-center{
+  text-align:center;
+}
+
+#tickets h4{
+  margin-bottom:1.2%;
+}
+
+#tickets a:hover{
+  background-color:rgb(242,213,26);
+}
+/*Bottom menu*/
+footer{
+  text-align:center;
+  font-size:0.8em;
+  color:rgb(136,136,136);
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+footer ul li{
+  display:inline-block;
+  text-transform: capitalize;
+  font-size:0.8em;
+  color:rgb(136,136,136);
+  border-left:1px solid rgb(181,181,181);
+  padding:0px 3px;
+}
+
+ footer ul li:nth-child(1){
+   border-left:none;
+ }
+
+footer ul li a{
+  color:rgb(136,136,136);
+  text-decoration: none;
+}
+
+footer ul li a:hover{
+  color:rgb(242,213,26);
+}
+
+footer{
+  font-size:0.8em;
+}
